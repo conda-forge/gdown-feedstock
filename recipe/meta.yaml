@@ -1,5 +1,5 @@
 {% set name = "gdown" %}
-{% set version = "3.10.1" %}
+{% set version = "3.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 165216993c7f8a2bd3ec9eeafc8408165aa5da684cdd5399997c7f86ebf4344f
+  sha256: 2773fbcf724c3f247a0d14487eae6a55eb91aa867ed1be575151036344614a67
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - gdown = gdown.cli:main
 
@@ -40,7 +40,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Download a large file from Google Drive.'
+  summary: Download a large file from Google Drive.
   description: |
     Download a large file from Google Drive.
     If you use curl/wget, it fails with a large file because of the security
