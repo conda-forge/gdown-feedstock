@@ -5,7 +5,7 @@ Home: https://github.com/wkentaro/gdown
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Download a large file from Google Drive.
 
