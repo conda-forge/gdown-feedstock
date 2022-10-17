@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - gdown = gdown.cli:main
@@ -22,8 +22,6 @@ requirements:
     - pip
   run:
     - python >=3.6
-    # setuptools is used to determine the version of the package at import time
-    - setuptools
     - filelock
     - requests
     - six
