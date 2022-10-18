@@ -1,5 +1,5 @@
 {% set name = "gdown" %}
-{% set version = "4.5.3" %}
+{set version = "4.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -22,8 +22,6 @@ requirements:
     - pip
   run:
     - python >=3.6
-    # setuptools is used to determine the version of the package at import time
-    - setuptools
     - filelock
     - requests
     - six
