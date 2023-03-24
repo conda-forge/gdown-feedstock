@@ -1,11 +1,11 @@
-About gdown
-===========
+About gdown-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gdown-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/wkentaro/gdown
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gdown-feedstock/blob/main/LICENSE.txt)
 
 Summary: Download a large file from Google Drive.
 
