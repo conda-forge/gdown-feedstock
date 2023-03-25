@@ -1,5 +1,5 @@
 {% set name = "gdown" %}
-{% set version = "4.7.0" %}
+{% set version = "4.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 55ba29550b7ce0fe5f520f140a9b8233a0216a711cf4c68530d19d8422702e3a
+  sha256: 347f23769679aaf7efa73e5655270fcda8ca56be65eb84a4a21d143989541045
 
 build:
   noarch: python
