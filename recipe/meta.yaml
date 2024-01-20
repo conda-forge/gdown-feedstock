@@ -1,5 +1,5 @@
 {% set name = "gdown" %}
-{% set version = "4.7.3" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 37edc3a0edda1a7fe5ebcc631c3aad0612582766460630ee52f481ba1ec7aefe
+  sha256: ac3142150a4178a9fb7a3a536c9df9590e488c2e6fa02c3ed391d26a6fc19527
 
 build:
   noarch: python
@@ -20,6 +20,9 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - hatchling
+    - hatch-fancy-pypi-readme
+    - hatch-vcs
   run:
     - python >=3.6
     - filelock
