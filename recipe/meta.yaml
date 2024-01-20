@@ -21,6 +21,8 @@ requirements:
     - python >=3.6
     - pip
     - hatchling
+    - hatch-fancy-pypi-readme
+    - hatch-vcs
   run:
     - python >=3.6
     - filelock
