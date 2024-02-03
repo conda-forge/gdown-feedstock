@@ -18,16 +18,15 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - hatchling
     - hatch-fancy-pypi-readme
     - hatch-vcs
   run:
-    - python >=3.6
+    - python >=3.8
     - filelock
     - requests
-    - six
     - tqdm
     - beautifulsoup4
 
