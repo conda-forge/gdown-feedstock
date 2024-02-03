@@ -1,5 +1,5 @@
 {% set name = "gdown" %}
-{% set version = "5.0.1" %}
+{% set version = "5.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,27 +7,26 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 173557b4d33aad9f7dc75ce2ff963d8b313f36371e15da4b5ebb35ac6c7d5af6
+  sha256: 550a72dc5ca2819fe4bcc15d80d05d7c98c0b90e57256254b77d0256b9df4683
 
 build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
-    - gdown = gdown.cli:main
+    - gdown = gdown.__main__:main
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - hatchling
     - hatch-fancy-pypi-readme
     - hatch-vcs
   run:
-    - python >=3.6
+    - python >=3.8
     - filelock
     - requests
-    - six
     - tqdm
     - beautifulsoup4
 
