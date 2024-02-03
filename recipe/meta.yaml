@@ -14,7 +14,7 @@ build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
-    - gdown = gdown.cli:main
+    - gdown = gdown.__main__:main
 
 requirements:
   host:
