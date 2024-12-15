@@ -6,31 +6,33 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 2145165062d85520a3cd98b356c9ed522c5e7984d408535409fd46f94defc787
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - gdown = gdown.__main__:main
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
     - hatch-fancy-pypi-readme
     - hatch-vcs
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - filelock
     - requests
     - tqdm
     - beautifulsoup4
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - gdown
   commands:
