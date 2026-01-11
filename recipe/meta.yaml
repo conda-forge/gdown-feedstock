@@ -1,5 +1,5 @@
 {% set name = "gdown" %}
-{% set version = "5.2.0" %}
+{% set version = "5.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2145165062d85520a3cd98b356c9ed522c5e7984d408535409fd46f94defc787
+  sha256: 247c2ad1f579db5b66b54c04e6a871995fc8fd7021708b950b8ba7b32cf90323
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - gdown = gdown.__main__:main
