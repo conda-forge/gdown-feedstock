@@ -1,13 +1,13 @@
 {% set name = "gdown" %}
-{% set version = "6.1.0" %}
+{% set version = "6.1.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 361c6e04c6ca335df50b9d71f40bcfe9ab70fb26a1b0e890a427267781389553
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 34cd14ac1280bc9085266e4771df2a3bea125e7853313d902e976640068389d5
 
 build:
   noarch: python
