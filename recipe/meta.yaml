@@ -1,5 +1,5 @@
 {% set name = "gdown" %}
-{% set version = "6.4.2" %}
+{% set version = "6.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a5454bb4a2c2770fb4cd0105d11fd75d3484a0f664565686a08a948caad8c188
+  sha256: 1911fc4dbd1488c7ad5f189adffe30d14ee96995fb1b203fc12740465c1eb2b3
 
 build:
   noarch: python
